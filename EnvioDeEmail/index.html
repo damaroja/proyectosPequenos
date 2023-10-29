@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="spinner.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="text-center my-5
+      ">Formulario de envio de Email</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <form role="form">
+            <div class="form-group">
+              <label for="emailid" class="h5"> Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailid"
+                name="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="asuntoid" class="h5 mt-2"> Asunto </label>
+              <textarea name="asunto" id="asuntoid" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="msgid" class="h5 mt-2">Mensaje</label>
+              <input
+                type="email"
+                class="form-control"
+                id="msgid"
+                name="msg"
+              />
+            </div>
+            <div id="alerta" class="mt-4"></div>
+            <div class="spinner d-none" id="spinner"></div>
+            <div class="d-grid gap-2 mt-3">
+              <button class="btn btn-success" type="button" id="enviarBtn" disabled>Enviar</button>
+              <button class="btn btn-danger" type="button" id="resetBtn">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 mt-3"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
