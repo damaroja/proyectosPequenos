@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Autos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col md-12">
+                <h1 class="text-center my-5">Buscador de Autos</h1>
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-md-3">
+            <h5>Marca</h5>
+            <select class="form-select" aria-label="Default select example" id="marca">
+                <option selected value =''>Seleccione</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Ford">Ford</option>
+                <option value="Mercedes Benz">Mercedes</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Dodge">Dodge</option>
+              </select>
+        </div>
+        <div class="col-md-3">
+            <h5>Año</h5>
+            <select class="form-select" aria-label="Default select example" id="year">
+                <option selected value="">Seleccione</option>
+              </select>
+        </div>
+        <div class="col-md-3">
+            <h5>Precio MIN</h5>
+            <select class="form-select" aria-label="Default select example" id="minimo">
+                <option selected value="">Seleccione</option>
+                <option value="20000">20000 </option>
+                <option value="30000">30000</option>
+                <option value="40000">40000</option>
+                <option value="50000">50000</option>
+                <option value="60000">60000</option>
+                <option value="70000">70000</option>
+              </select>
+        </div>
+        <div class="col-md-3">
+            <h5>Precio MAX</h5>
+            <select class="form-select" aria-label="Default select example" id="maximo">
+                <option selected value="">Seleccione</option>
+                <option value="20000">20000 </option>
+                <option value="30000">30000</option>
+                <option value="40000">40000</option>
+                <option value="50000">50000</option>
+                <option value="60000">60000</option>
+                <option value="70000">70000</option>
+              </select>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-md-4">
+            <h5>Puertas</h5>
+            <select class="form-select" aria-label="Default select example" id="puertas">
+                <option selected value="">Seleccione</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+
+              </select>
+        </div>
+        <div class="col-md-4">
+            <h5>Transmision</h5>
+            <select class="form-select" aria-label="Default select example" id="transmision">
+                <option selected value="">Seleccione</option>
+                <option value="manual">Manual</option>
+                <option value="automatico">Automatica</option>
+
+              </select>
+        </div>
+        <div class="col-md-4">
+            <h5>Color</h5>
+            <select class="form-select" aria-label="Default select example" id="color">
+                <option selected value="">Seleccione</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Azul">Azul</option>
+                <option value="Negro">Negro</option>
+                <option value="Rojo">Rojo</option>
+              </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="resultados">
+          <h1 class="text-center text-primary">
+            Resultados
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" type="module"></script>
+    <script src="db.js" type="module"></script>
+
+  </body>
+</html>
