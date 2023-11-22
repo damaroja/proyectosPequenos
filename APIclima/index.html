@@ -1,0 +1,41 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaAPP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="m-auto w-50 mt-5 text-center">
+                <h1>Busca el clima</h1>
+                <h5>Clima en <span id="ciudadTxt"></span></h5>
+                <h4 class="display-2">Temperatura: <span id="temp"></span></h4>
+                <h4> Max: <span id="max"></span></h4>
+                <h4> Min: <span id="min"></span></h4>
+                <label for="ciudad" class="mb-2">Elige la ciudad</label>
+                <input type="text" name="ciudad" id="ciudad" class="form-control mb-4">
+                <label for="pais" class="mb-2">Elige el Pais</label>
+                <select name="pais" id="pais" class="form-control">
+                    <option value="ES">España</option>
+                </select>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning mt-4" type="button" id="obtenerBtn">Obtener Clima</button>
+                  </div>
+            </div>
+            <div id="alerta"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
