@@ -29,7 +29,7 @@ async function obtenerClima() {
 }
 
 async function consultarAPI(ciudad, pais) {
-    const appId = '4b961f140c6ac9b8026ae690cb87141c';
+    const appId = '4b961f140c6ac985036ae690cb87141c';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
     await fetch(url)
         .then(respuesta => respuesta.json())
