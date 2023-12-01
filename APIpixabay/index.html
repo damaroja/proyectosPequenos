@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Recetas</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="color">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h3 class="text-center text-uppercase mt-5">
+            Buscador de imagenes de Pixabay
+          </h3>
+          <form action="" class="form-group">
+            <p for="busqueda" class="text-uppercase mb-2 mt-3 h24">
+              Termino de Busqueda
+            </p>
+            <input
+              type="text"
+              id="busqueda"
+              class="form-control mb-3 p-3"
+              placeholder="Busca algo"
+            />
+            <div class="d-grid gap-2">
+              <button
+                class="btn btn-warning btn-lg text-white"
+                type="button"
+                id="buscarBtn"
+              >
+                Buscar Imagenes
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="spinner" id="spinner"></div>
+          <h3 class="text-center text-uppercase mt-5">
+            Resultado de la busqueda
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <div class="row" id="ImagenesList">
+
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-4">
+            <div id="paginador"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
