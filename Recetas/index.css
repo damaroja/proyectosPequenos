@@ -1,0 +1,91 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(141, 85, 85);
+    color: white;
+    font-size: 25px;
+
+}
+
+.nav > h3 {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    font-size: 25px;
+    color: white;
+}
+
+.navdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.navdiv > h4 {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    font-size: 25px;
+    color: white;
+}
+
+.titulo, .resultados{
+    text-align: center;
+    margin-top: 3em;
+}
+
+
+.buscador {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(141, 85, 85);
+    padding: 2em;
+    width: 800px;
+    margin-top: 2em;
+    border-radius: .3em;
+    font-size: 25px;
+}
+
+.buscador > label {
+    margin-bottom: .5em;
+    font-size: 25px;
+    color: white
+}
+
+.buscador > select {
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: .3em;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.recetaBtn, .eliminar-favoritoBtn {
+    background-color: rgb(141, 85, 85) !important;
+    color: white !important;
+    border: 1px solid white !important;
+    margin: 3px;
+}
