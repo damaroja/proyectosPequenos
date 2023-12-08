@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de consumos y propinas</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body >
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 header">
+          <header>Calculadora de consumos y propinas</header>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="btn-center">
+          <button type="button" class="btn-no" data-bs-toggle="modal" data-bs-target="#no-modal">
+            Nueva Orden
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="modal fade" id="no-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Restaurant App</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="form-group">
+                  <label for="mesa" class="mt-2 h5">Mesa</label>
+                  <input type="number" max="50" min="1" class="form-control mt-1" id="mesa" />
+                  <label for="hora" class="mt-2 h5">Hora</label>
+                  <input type="time" class="form-control mt-1 mb-2" id="hora" />
+                  <button type="button" class="btn btn-success mt-3" id="noBtn">Crear Orden</button>
+                  <div id="alerta" class="mt-3"></div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-sucess m-5" hidden id="table">
+          <thead>
+            <tr>
+              <th scope="col">Platillos</th>
+              <th scope="col">Precio Unidad</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody id="platillos">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row mt-5" hidden id="resumen">
+      <div class="col-md-6">
+        <h2 class="text-center">Pedido</h2>
+        <div id="pedido"></div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-center">Resumen de Pedido</h2>
+        <div id="resumenPedido"></div>
+      </div>
+    </div>
+  </div>
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
