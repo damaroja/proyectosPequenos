@@ -1,23 +1,29 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Roll Simulator</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1>Dice Roll Simulator</h1>
-    <div class="dice" id="dice">
-        &#9860;
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dice Roll Simulator</h1>
+      <p class="dice" id="dice"></p>
+      <button class="btn" id="btn">Roll Dice</button>
+      <button class="btn" id="resetBtn">Reset</button>
+      <div class="estadisticas">
+        <div>
+          <ul class="data" id="data"></ul>
+        </div>
+        <div>
+            <div class="resultados" id="resultados">Estadisticas</div>
+            <h2>Tiradas: <span id="tiradas"></span></h2>
+            <h2>Resultados: <span id="estadisticas"></span></h2>
+        </div>
+      </div>
     </div>
-    <button id="roll-btn">Roll Dice</button>
-    <ul id="roll-history">
-    </ul>
-
-
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
